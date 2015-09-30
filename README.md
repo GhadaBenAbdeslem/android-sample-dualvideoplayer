@@ -22,6 +22,7 @@ To run this example you need:
   uSD card.
 
 Compatible Video file extensions include:
+
 * .avi
 * .mp4
 * .3gp
