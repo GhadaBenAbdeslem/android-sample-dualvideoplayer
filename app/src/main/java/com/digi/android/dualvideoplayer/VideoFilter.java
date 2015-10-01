@@ -1,4 +1,4 @@
-package com.example.android.dualvideoplayer;
+package com.digi.android.dualvideoplayer;
 
 import java.io.File;
 import java.io.FilenameFilter;

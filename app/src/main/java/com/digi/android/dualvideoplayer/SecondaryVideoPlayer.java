@@ -1,4 +1,4 @@
-package com.example.android.dualvideoplayer;
+package com.digi.android.dualvideoplayer;
 
 import android.app.Presentation;
 import android.content.Context;
