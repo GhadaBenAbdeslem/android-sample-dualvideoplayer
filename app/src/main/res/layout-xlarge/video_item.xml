@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="6dip"
-    android:orientation="horizontal">
-     <ImageView
+    android:orientation="horizontal"
+    android:padding="6dp">
+
+    <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_marginRight="5dip"
-        android:src="@drawable/video_icon" />
-	<TextView 
-		android:id="@+id/video_title"
-    	android:layout_width="fill_parent"
-    	android:layout_height="fill_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/video_icon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

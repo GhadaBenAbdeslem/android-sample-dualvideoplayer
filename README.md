@@ -3,9 +3,12 @@ Dual Video Player Sample
 
 This example demonstrates how to reproduce videos in two different displays 
 simultaneously in Android. For this purpose, a custom video player is used. 
-This application allows navigation in the Android file system to search for 
-desired video files to be reproduced. You can select the destination screen of 
-the video to be played.
+
+The application allows navigation in the Android file system to search for
+desired video files to be reproduced. A preview of the selected video file
+is displayed at the right side of the application, allowing you to reproduce
+it in full-screen mode using the change to full-screen button and choose the
+destination display.
 
 Demo requirements
 -----------------
@@ -13,10 +16,8 @@ Demo requirements
 To run this example you need:
 
 * One compatible device to host the application.
-* Network connection between the device and the host PC in order to transfer 
-  and launch the application.
-* Establish remote target connection to your Digi hardware before running this 
-  application.
+* A USB connection between the device and the host PC in order to transfer and
+  launch the application.
 * A secondary display attached to your device, preferably HDMI (Full-HD).
 * Video files to play stored in the Android file system or in a external 
   uSD card.
@@ -36,8 +37,7 @@ Demo setup
 Make sure the hardware is set up correctly:
 
 1. The device is powered on.
-2. The device is connected directly to the PC or to the Local Area Network (LAN)
-   by the Ethernet cable.
+2. The device is connected directly to the PC by the micro USB cable.
 3. The secondary display is connected to the SBC board.
 4. You have video files stored in your Android file system or in the uSD card.
 
@@ -57,8 +57,17 @@ application.
 Click **full-screen** and choose the destination display when a prompt appears
 to play the selected video.
 
-Tested on
----------
+Compatible with
+---------------
 
 * ConnectCore 6 SBC
 * ConnectCore 6 SBC v2
+
+License
+-------
+
+This software is open-source software. Copyright Digi International, 2014-2015.
+
+This Source Code Form is subject to the terms of the Mozilla Public License,
+v. 2.0. If a copy of the MPL was not distributed with this file, you can obtain
+one at http://mozilla.org/MPL/2.0/.

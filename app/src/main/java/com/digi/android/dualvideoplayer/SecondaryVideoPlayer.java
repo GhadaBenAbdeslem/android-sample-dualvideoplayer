@@ -1,3 +1,15 @@
+/**
+ * Copyright (c) 2014-2015 Digi International Inc.,
+ * All rights not expressly granted are reserved.
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Digi International Inc. 11001 Bren Road East, Minnetonka, MN 55343
+ * =======================================================================
+ */
+
 package com.digi.android.dualvideoplayer;
 
 import android.app.Presentation;
@@ -29,10 +41,28 @@ public class SecondaryVideoPlayer extends Presentation {
 		this.display = display;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * @see android.app.Dialog#onCreate(android.os.Bundle)
+	/**
+	 * Plays the given video path.
+	 *
+	 * @param videoPath Path of the video to play.
 	 */
+	public void playVideo(String videoPath) {
+		if (videoPath == null)
+			return;
+		this.path = videoPath;
+		startVideo();
+	}
+
+	/**
+	 * Returns the secondary display name.
+	 *
+	 * @return The secondary display name.
+	 */
+	public String getDisplayName() {
+		return display.getName();
+	}
+
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.video_fullscreen);
@@ -57,18 +87,6 @@ public class SecondaryVideoPlayer extends Presentation {
 			}
 		});
 	}
-	
-	/**
-	 * Plays the given video path.
-	 * 
-	 * @param videoPath Path of the video to play.
-	 */
-	public void playVideo(String videoPath) {
-		if (videoPath == null)
-			return;
-		this.path = videoPath;
-		startVideo();
-	}
 
 	/**
 	 * Starts the configured video.
@@ -76,14 +94,5 @@ public class SecondaryVideoPlayer extends Presentation {
 	private void startVideo() {
 		video.setVideoPath(path);
 		video.start();
-	}
-	
-	/**
-	 * Returns the secondary display name.
-	 * 
-	 * @return The secondary display name.
-	 */
-	public String getDisplayName() {
-		return display.getName();
 	}
 }
