@@ -377,6 +377,8 @@ public class VideoPlayerActivity extends ListActivity implements OnCompletionLis
 			fullscreenVideo.seekTo(seek);
 			ctlr.setMediaPlayer(fullscreenVideo);
 			ctlr.setAnchorView(findViewById(R.id.fullscreen_video_view));
+			videosListView.setEnabled(false);
+			folderListView.setEnabled(false);
 			screenStatus = SCREEN_STATUS_FULL;
 		}
 	}
@@ -398,6 +400,8 @@ public class VideoPlayerActivity extends ListActivity implements OnCompletionLis
 			video.setVideoPath(new File(currentFolder, videos.get(selectedVideoIndex)).toString());
 			video.start();
 			video.seekTo(seek);
+			videosListView.setEnabled(true);
+			folderListView.setEnabled(true);
 			screenStatus = SCREEN_STATUS_NORMAL;
 		}
 	}
