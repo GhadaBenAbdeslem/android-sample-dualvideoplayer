@@ -14,7 +14,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package com.digi.android.dualvideoplayer;
+package com.digi.android.sample.dualvideoplayer;
 
 import java.io.File;
 import java.util.ArrayList;
